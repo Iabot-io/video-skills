@@ -1,0 +1,13 @@
+{
+  "name": "iabot-skills-intro-example",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "check": "hyperframes check --json --at 1.5,4.5,8.5",
+    "render": "hyperframes render --output iabot-skills-intro.mp4 --fps 30 --quality standard --no-browser-gpu --workers 2"
+  },
+  "devDependencies": {
+    "hyperframes": "0.9.9",
+    "gsap": "3.15.0"
+  }
+}

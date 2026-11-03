@@ -30,6 +30,8 @@ En la plataforma, abre **Skills**, revisa la habilidad e impórtala con el ámbi
 - **Presentaciones audiovisuales de arquitectura:** «Presenta este proyecto con los planos y renders adjuntos, distinguiendo estado actual y propuesta.»
 - **Revisar entregas de vídeo:** «Revisa este MP4 frente a la especificación y separa la comprobación técnica de la visual y sonora.»
 
+Consulta el [vídeo de demostración y su proyecto editable de HyperFrames](examples/iabot-intro/README.md).
+
 ## Herramientas y límites
 
 Las composiciones requieren HyperFrames o editor compatible; inspección y conversión utilizan FFmpeg y ffprobe. Verifica herramientas, recursos, derechos y parámetros antes de producir.

@@ -9,6 +9,11 @@ describe el contrato de la composición; estos controles ayudan a revisarlo:
   clase `clip` cuando el formato de esa versión la utiliza.
 - Una animación GSAP se registra en la colección de timelines de la composición
   y se crea pausada para que el motor pueda buscar cada instante.
+- En una escena agrupada, usa subcomposiciones con su propia identidad y timeline.
+  El runtime anida sus tiempos; no los añadas una segunda vez al timeline padre.
+  La duración de una subcomposición procede de su timeline. Consulta el
+  [contrato de composiciones](https://hyperframes.app/docs/2-concepts/1-compositions)
+  y el [esquema HTML](https://hyperframes.app/docs/6-reference/html-schema).
 - Cargar fuentes, imágenes o audio debe terminar antes de capturar los fotogramas.
   Comprueba el estado inicial tras una carga limpia, no solo después de reproducir.
 - Revisar un instante tras avanzar y después de retroceder debe dar la misma

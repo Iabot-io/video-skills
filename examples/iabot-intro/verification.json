@@ -1,0 +1,86 @@
+{
+  "hyperframes_version": "0.9.9",
+  "validation": "strict check; 0 errors and warnings",
+  "encoding": "local; software capture",
+  "media": {
+    "file": "iabot-skills-intro.mp4",
+    "sha256": "c6eb60bba2ca8ff49ff95f5b2159bb2e43c9dcdd47058b1883d1be0ae64a9660",
+    "bytes": 640394,
+    "selected_video_stream": 0,
+    "actual": {
+      "width": 1280,
+      "height": 720,
+      "fps": 30.0,
+      "duration": 12.0
+    },
+    "streams": [
+      {
+        "index": 0,
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "avg_frame_rate": "30/1",
+        "r_frame_rate": "30/1",
+        "duration": "12.000000",
+        "nb_frames": "360",
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0
+        }
+      }
+    ],
+    "format": "mov,mp4,m4a,3gp,3g2,mj2",
+    "checks": [
+      {
+        "field": "width",
+        "expected": 1280.0,
+        "actual": 1280,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "field": "height",
+        "expected": 720.0,
+        "actual": 720,
+        "tolerance": 0,
+        "passed": true
+      },
+      {
+        "field": "fps",
+        "expected": 30.0,
+        "actual": 30.0,
+        "tolerance": 0.01,
+        "passed": true
+      },
+      {
+        "field": "duration",
+        "expected": 12.0,
+        "actual": 12.0,
+        "tolerance": 0.1,
+        "passed": true
+      }
+    ],
+    "metadata_ok": true,
+    "issues": [],
+    "visual_review_required": true,
+    "audio_review_required": false,
+    "limitations": "Metadata inspection does not decode every frame or verify picture, sound, content or rights."
+  }
+}

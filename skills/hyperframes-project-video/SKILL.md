@@ -61,3 +61,10 @@ Entrega el vídeo, la composición editable y los recursos redistribuibles pedid
 Incluye versión de HyperFrames y requisitos para reabrirla; documenta los recursos
 externos que no se puedan redistribuir. Distingue proyecto guardado, previsualización
 y archivo final realmente renderizado.
+
+## Ejemplo reproducible
+
+Consulta el [vídeo de IAbot.io y su proyecto editable](../../examples/iabot-intro/README.md):
+una composición de 12 segundos con escenas, logotipo y comprobaciones de entrega.
+Utilízalo como referencia de estructura y sustituye el contenido por el encargo
+real; sus cifras corresponden al catálogo publicado el 3 de noviembre de 2026.
