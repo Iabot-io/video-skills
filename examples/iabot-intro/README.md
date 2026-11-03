@@ -31,7 +31,7 @@ estado de la animación. Los textos, tiempos y estilos se editan en `index.html`
 
 ## Uso en IAbot.io
 
-Asigna [Producción de vídeos con HyperFrames](../../skills/hyperframes-project-video/SKILL.md)
+Asigna [Producción de vídeos con HyperFrames](https://github.com/Iabot-io/video-skills/tree/main/skills/hyperframes-project-video)
 a un empleado audiovisual. Aporta el proyecto y pide, por ejemplo:
 
 > Adapta este vídeo a nuestro encargo, conserva los recursos autorizados y entrega

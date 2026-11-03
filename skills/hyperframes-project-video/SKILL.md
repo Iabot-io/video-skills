@@ -64,7 +64,9 @@ y archivo final realmente renderizado.
 
 ## Ejemplo reproducible
 
-Consulta el [vídeo de IAbot.io y su proyecto editable](../../examples/iabot-intro/README.md):
+Consulta el [vídeo de IAbot.io y su proyecto editable](https://github.com/Iabot-io/video-skills/tree/main/examples/iabot-intro):
 una composición de 12 segundos con escenas, logotipo y comprobaciones de entrega.
 Utilízalo como referencia de estructura y sustituye el contenido por el encargo
 real; sus cifras corresponden al catálogo publicado el 3 de noviembre de 2026.
+Descarga el proyecto completo si vas a editarlo: es un ejemplo del repositorio y
+no se copia al ordenador por importar las instrucciones de esta skill.
