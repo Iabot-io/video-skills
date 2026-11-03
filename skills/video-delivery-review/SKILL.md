@@ -24,7 +24,10 @@ Identifica archivo, revisión y especificación solicitada: tamaño, relación d
 aspecto, duración, fps, códec, audio, idioma y subtítulos. Conserva el original;
 esta revisión no recodifica ni sube archivos.
 
-Ejecuta el ayudante desde esta carpeta, indicando solo expectativas acordadas:
+Abre [el ayudante de inspección](scripts/inspect_video.py) desde la revisión
+elegida. Si falta localmente, revisa su código y guárdalo como
+`scripts/inspect_video.py` en el ordenador autorizado. Ejecuta desde su carpeta
+superior, indicando solo expectativas acordadas:
 
 ```sh
 python3 scripts/inspect_video.py video.mp4 --out informe.json --width 1920 --height 1080 --fps 25 --duration 30

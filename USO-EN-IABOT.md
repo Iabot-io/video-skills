@@ -22,6 +22,12 @@ una skill no instala sus programas ni ejecuta automáticamente los scripts. Si s
 necesita software, comprueba primero el inventario del ordenador y la guía de
 instalación del fabricante; conserva las aplicaciones y trabajos existentes.
 
+En IAbot.io, los recursos de una habilidad importada se muestran como referencias;
+antes de ejecutar un ayudante, abre su enlace desde la revisión elegida, inspecciona
+el código y guarda el archivo en el ordenador autorizado. Conserva la estructura
+de carpetas que indica el procedimiento. Si ya instalaste el paquete completo en
+un agente compatible, comprueba que esos recursos están presentes.
+
 La importación y asignación requieren los permisos de gestión correspondientes.
 Cada empleado solo puede utilizar las habilidades que le están permitidas. Una
 propuesta pendiente de revisión no equivale a una skill activa para toda la empresa.

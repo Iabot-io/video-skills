@@ -8,10 +8,10 @@ from urllib.parse import unquote, urlsplit
 import yaml
 
 
-def validate(root):
+def validate(root, require_skills=True):
     errors = []
     skills = sorted((root / "skills").glob("*/SKILL.md"))
-    if not skills:
+    if not skills and require_skills:
         errors.append("No skills found in skills/*/SKILL.md")
     names = set()
     for path in skills:

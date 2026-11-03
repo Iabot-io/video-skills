@@ -27,8 +27,8 @@ Trabaja con vídeo, audio, archivo de subtítulos y requisitos de idioma. Las co
 ## Procedimiento
 
 1. Comprueba formato, codificación, idioma y correspondencia del archivo con la versión del vídeo.
-2. Detecta intervalos invertidos, solapes, saltos y subtítulos fuera de la duración. Para SRT, ejecuta python3 scripts/check_subtitles.py subtitulos.srt --out informe.json desde la carpeta de esta skill; añade --duration solo con una duración de vídeo comprobada. Otros formatos necesitan su herramienta compatible.
-3. Contrasta texto con audio y marca fragmentos inaudibles en lugar de completarlos por intuición.
+2. Detecta intervalos invertidos, solapes, saltos y subtítulos fuera de la duración. Para SRT, abre [el ayudante](scripts/check_subtitles.py) de la revisión elegida y, si falta localmente, inspecciónalo y guárdalo en scripts/check_subtitles.py dentro del ordenador autorizado. Ejecuta python3 scripts/check_subtitles.py subtitulos.srt --out informe.json desde su carpeta superior; añade --duration solo con una duración de vídeo comprobada. Otros formatos necesitan su herramienta compatible.
+3. Contrasta texto con audio y marca fragmentos inaudibles en lugar de completarlos por intuición. Si solo hay una duración declarada, informa por separado del exceso frente a esa declaración y de la duración física pendiente; no declares sincronía verificada sin reproducir el medio.
 4. Revisa cortes de línea, tiempo de lectura y nombres con el criterio de entrega acordado.
 5. Entrega una copia corregida conservando el original y los cambios que requieren revisión.
 
