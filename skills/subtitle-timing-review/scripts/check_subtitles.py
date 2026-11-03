@@ -22,7 +22,8 @@ def inspect(text, duration=None):
     blocks = re.split(r"\n[ \t]*\n", text) if text else []
     issues = []
     cues = []
-    previous_end = None
+    active_end = None
+    active_block = None
     previous_start = None
     for position, block in enumerate(blocks, 1):
         lines = block.splitlines()
@@ -46,15 +47,18 @@ def inspect(text, duration=None):
             issues.append({"block": position, "code": "NON_POSITIVE_DURATION"})
         if previous_start is not None and start < previous_start:
             issues.append({"block": position, "code": "OUT_OF_ORDER"})
-        if previous_end is not None and start < previous_end:
-            issues.append({"block": position, "code": "OVERLAP", "review_required": True})
+        if active_end is not None and start < active_end:
+            issues.append({"block": position, "code": "OVERLAP", "overlaps_with_block": active_block,
+                           "review_required": True})
         if duration is not None and end > duration:
             issues.append({"block": position, "code": "AFTER_MEDIA_END"})
         content = "\n".join(lines[2:]).strip()
         if not content:
             issues.append({"block": position, "code": "EMPTY_TEXT"})
         cues.append({"number": number, "start": start, "end": end, "characters": len(content)})
-        previous_start, previous_end = start, end
+        previous_start = start
+        if active_end is None or end > active_end:
+            active_end, active_block = end, position
     if not blocks:
         issues.append({"code": "NO_CUES"})
     return {"format": "SRT", "cues": cues, "issues": issues,
