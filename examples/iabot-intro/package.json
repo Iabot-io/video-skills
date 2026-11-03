@@ -9,5 +9,8 @@
   "devDependencies": {
     "hyperframes": "0.9.9",
     "gsap": "3.15.0"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   }
 }

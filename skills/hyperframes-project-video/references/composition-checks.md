@@ -19,8 +19,9 @@ describe el contrato de la composición; estos controles ayudan a revisarlo:
 - Revisar un instante tras avanzar y después de retroceder debe dar la misma
   composición. Detecta así animaciones dependientes de efectos acumulativos.
 
-El entorno del inicio rápido utiliza Node.js 22 o posterior y FFmpeg para
-codificación local. Sigue las dependencias declaradas por la versión del proyecto.
+El inicio rápido indica Node.js 22 o posterior y FFmpeg para codificación local.
+El ejemplo de esta colección fija dependencias que requieren al menos Node.js
+22.12.0; sigue las versiones declaradas por el proyecto que vayas a ejecutar.
 La previsualización se abre con `npx hyperframes preview` y el ejemplo oficial
 exporta con `npx hyperframes render --output output.mp4`. Estos comandos pueden
 resolver paquetes con npm; usa la instalación existente y las políticas del

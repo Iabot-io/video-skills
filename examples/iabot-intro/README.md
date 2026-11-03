@@ -11,7 +11,9 @@ breve, sin voz ni música añadidas.
 
 ## Reproducir el proyecto
 
-Requiere Node.js 22 o posterior, FFmpeg y un navegador compatible con el CLI.
+Requiere Node.js 22.12.0 o posterior, FFmpeg y un navegador compatible con el CLI.
+El ejemplo se ha comprobado con Node.js 24. Las versiones mínimas de las
+dependencias fijadas están recogidas en `package-lock.json`.
 Desde esta carpeta:
 
 ```sh
