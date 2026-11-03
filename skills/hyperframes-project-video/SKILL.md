@@ -1,18 +1,22 @@
 ---
 name: hyperframes-project-video
-description: Produce an editable HyperFrames video from a brief and approved assets, with a shot plan, deterministic timeline, preview checks and verified media delivery.
+description: Producir una composición editable de HyperFrames y verificar el vídeo exportado. En IAbot.io, asígnala a un empleado de producción audiovisual y aporta briefing, recursos autorizados, duración y formatos de entrega.
 license: MIT
 metadata:
   author: IAbot.io
-  version: "0.1.0"
+  version: 0.1.0
+  sector: Audiovisual y producción de vídeo
 ---
 
 # Producir un vídeo con HyperFrames
 
-Necesita HyperFrames y sus dependencias disponibles en el entorno. Consulta la
-[guía oficial](https://hyperframes.app/docs/1-startup/2-quickstart) y la ayuda de la
-versión instalada para sus comandos y formato. Esta habilidad no instala ni
-actualiza paquetes por sí sola y no sustituye la documentación del fabricante.
+## Uso en IAbot.io
+
+Asigna esta skill a **un empleado de producción audiovisual** desde la biblioteca Skills de [IAbot.io](https://iabot.io). Aporta briefing, recursos autorizados, duración y formatos de entrega.
+
+**Ejemplo de encargo:** «Crea un vídeo con estos recursos y entrega la composición editable y el archivo final revisado.»
+
+**Resultado a revisar:** Vídeo, proyecto editable y relación de requisitos y recursos.
 
 ## Preparar el encargo
 

@@ -1,17 +1,22 @@
 ---
 name: video-delivery-review
-description: Review a delivered video against requested resolution, frame rate, duration, audio and visual requirements, combining ffprobe metadata with playback and representative frame inspection.
+description: Comprobar metadatos y contenido audiovisual frente a requisitos de entrega. En IAbot.io, asígnala a un empleado de control de calidad audiovisual y aporta vídeo final y especificación de tamaño, duración, fps y audio.
 license: MIT
 metadata:
   author: IAbot.io
-  version: "0.1.0"
+  version: 0.1.0
+  sector: Audiovisual y producción de vídeo
 ---
 
 # Comprobar una entrega de vídeo
 
-Necesita Python 3, `ffprobe` de FFmpeg y una forma de reproducir u observar el
-vídeo. Trabaja sobre el archivo final que se va a entregar, no solo su proyecto
-o una previsualización anterior.
+## Uso en IAbot.io
+
+Asigna esta skill a **un empleado de control de calidad audiovisual** desde la biblioteca Skills de [IAbot.io](https://iabot.io). Aporta vídeo final y especificación de tamaño, duración, fps y audio.
+
+**Ejemplo de encargo:** «Revisa este MP4 frente a la especificación y separa la comprobación técnica de la visual y sonora.»
+
+**Resultado a revisar:** Informe de metadatos, revisión audiovisual y defectos localizados.
 
 ## Identidad y requisitos
 

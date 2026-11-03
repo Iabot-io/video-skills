@@ -1,17 +1,22 @@
 ---
 name: architectural-presentation-video
-description: Build an architectural presentation video from verified plans, renders and clips, maintaining project revisions, room identities, scale statements and the distinction between existing and proposed work.
+description: Preparar vídeos de arquitectura conservando revisiones, estancias y afirmaciones verificables. En IAbot.io, asígnala a un empleado audiovisual del proyecto y aporta planos, renders, revisiones y mensaje de la presentación.
 license: MIT
 metadata:
   author: IAbot.io
-  version: "0.1.0"
+  version: 0.1.0
+  sector: Audiovisual y producción de vídeo
 ---
 
 # Presentación audiovisual de arquitectura
 
-Úsala cuando el vídeo deba explicar un proyecto arquitectónico. Necesita recursos
-visuales del proyecto y una herramienta de edición o composición, como HyperFrames.
-Elige la herramienta disponible que corresponda al encargo.
+## Uso en IAbot.io
+
+Asigna esta skill a **un empleado audiovisual del proyecto** desde la biblioteca Skills de [IAbot.io](https://iabot.io). Aporta planos, renders, revisiones y mensaje de la presentación.
+
+**Ejemplo de encargo:** «Presenta este proyecto con los planos y renders adjuntos, distinguiendo estado actual y propuesta.»
+
+**Resultado a revisar:** Presentación audiovisual y referencias de los planos y rótulos utilizados.
 
 ## Relato y materiales
 

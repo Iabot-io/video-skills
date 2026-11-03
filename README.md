@@ -1,67 +1,55 @@
-# Video skills · IAbot.io
+# Audiovisual y producción de vídeo · Skills para empleados IA de IAbot.io
 
-**Habilidades abiertas para agentes de IA que producen y revisan vídeos a partir
-de un encargo, archivos y herramientas autorizadas.**
+Encargos audiovisuales, HyperFrames, edición de archivos y revisión de subtítulos y entregables.
 
-Publicadas por [IAbot.io](https://iabot.io). Usan el formato abierto
-[Agent Skills](https://agentskills.io/specification), con plantillas y un ayudante
-de inspección de medios.
+Procedimientos abiertos y concretos para agentes IA, con entradas, criterios de revisión y entregables. Publicados por [IAbot.io](https://iabot.io), plataforma de empleados IA con memoria, aplicaciones y ordenador virtual Linux.
 
-## Habilidades
+## Habilidades y uso
 
-| Skill | Trabajo y entregable |
-| --- | --- |
-| [hyperframes-project-video](skills/hyperframes-project-video/SKILL.md) | Convertir un encargo en una composición editable de HyperFrames, previsualizarla y entregar su vídeo. |
-| [architectural-presentation-video](skills/architectural-presentation-video/SKILL.md) | Preparar una presentación audiovisual con planos, renders y textos trazables al mismo proyecto. |
-| [video-delivery-review](skills/video-delivery-review/SKILL.md) | Comprobar metadatos del archivo y revisar imagen, sonido y requisitos de entrega. |
+| Skill | Empleado en IAbot.io | Entrega que revisar |
+| --- | --- | --- |
+| [Producción de vídeos con HyperFrames](skills/hyperframes-project-video/SKILL.md) | un empleado de producción audiovisual | Vídeo, proyecto editable y relación de requisitos y recursos. |
+| [Presentaciones audiovisuales de arquitectura](skills/architectural-presentation-video/SKILL.md) | un empleado audiovisual del proyecto | Presentación audiovisual y referencias de los planos y rótulos utilizados. |
+| [Revisar entregas de vídeo](skills/video-delivery-review/SKILL.md) | un empleado de control de calidad audiovisual | Informe de metadatos, revisión audiovisual y defectos localizados. |
+| [Revisar subtítulos y sincronía](skills/subtitle-timing-review/SKILL.md) | un empleado de edición y accesibilidad audiovisual | Subtítulos revisados y registro de intervalos dudosos. |
+| [Convertir medios con parámetros comprobados](skills/media-format-conversion/SKILL.md) | un empleado técnico audiovisual | Archivo convertido, parámetros utilizados y comprobación de correspondencia. |
+| [Preparar un briefing audiovisual ejecutable](skills/audiovisual-production-brief/SKILL.md) | un empleado de coordinación audiovisual | Briefing, escaleta y lista de recursos y decisiones para producción. |
 
-## Instalación
+## Instalación y uso en IAbot.io
 
 ```sh
-npx skills add iabot-io/video-skills --list
-npx skills add iabot-io/video-skills
-npx skills add iabot-io/video-skills --skill hyperframes-project-video
+npx skills add Iabot-io/video-skills --list
+npx skills add Iabot-io/video-skills
 ```
 
-Instalar una skill no instala HyperFrames, FFmpeg, un navegador ni conexiones de
-terceros. Cada `SKILL.md` indica sus requisitos. Se mantienen los permisos y el
-presupuesto del entorno que la utilice.
+En la plataforma, abre **Skills**, revisa la habilidad e impórtala con el ámbito adecuado. Adjunta sus entradas y da el encargo al empleado. Consulta [la guía de uso en IAbot.io](USO-EN-IABOT.md) para el recorrido completo.
 
-## Ejemplos de uso
+## Ejemplos
 
-- «Crea un vídeo de 30 segundos con estas imágenes y textos. Usa HyperFrames y
-  entrega también la composición editable».
-- «Presenta este proyecto de reforma con el plano y estos tres renders. Distingue
-  estado actual y propuesta y conserva los nombres de cada estancia».
-- «Revisa si este MP4 cumple 1920 × 1080, 25 fps y 30 segundos, y comprueba si se
-  cortan los rótulos o el final del audio».
+- **Producción de vídeos con HyperFrames:** «Crea un vídeo con estos recursos y entrega la composición editable y el archivo final revisado.»
+- **Presentaciones audiovisuales de arquitectura:** «Presenta este proyecto con los planos y renders adjuntos, distinguiendo estado actual y propuesta.»
+- **Revisar entregas de vídeo:** «Revisa este MP4 frente a la especificación y separa la comprobación técnica de la visual y sonora.»
 
-## HyperFrames y licencias
+## Herramientas y límites
 
-[HyperFrames](https://github.com/heygen-com/hyperframes) es un proyecto de HeyGen,
-independiente de IAbot.io. Esta colección aporta procedimientos de producción y
-entrega; no redistribuye su código ni sus skills oficiales. Consulta sus requisitos
-y licencia en el proyecto original. Cada imagen, fuente, vídeo o audio utilizado
-en una composición conserva sus propios derechos.
+Las composiciones requieren HyperFrames o editor compatible; inspección y conversión utilizan FFmpeg y ffprobe. Verifica herramientas, recursos, derechos y parámetros antes de producir.
 
-Las instalaciones con telemetría habilitada del CLI de skills contribuyen al
-descubrimiento según las reglas de [skills.sh](https://www.skills.sh/docs/faq).
-No se promete indexación inmediata ni posición en el directorio.
+La colección no instala aplicaciones ni concede accesos. Las referencias se comprueban según la fecha, jurisdicción y alcance del encargo. Los resultados profesionales o administrativos conservan sus responsables y revisiones.
 
-## Comprobación local
+## Fuentes de referencia
+
+- [HyperFrames, guía oficial](https://hyperframes.app/docs/1-startup/2-quickstart)
+- [Documentación de FFmpeg](https://ffmpeg.org/documentation.html)
+
+Las fuentes orientan el método; su enlace no significa que una institución certifique o avale estas skills.
+
+## Comprobación y licencia
 
 ```sh
 python3 -m pip install -r scripts/requirements-validation.txt
 python3 scripts/validate_skills.py
 ```
 
-El ayudante `inspect_video.py` necesita `ffprobe` en PATH. Su informe técnico debe
-acompañarse de una revisión audiovisual: los metadatos no prueban que las imágenes
-y el sonido sean correctos.
+Se comprueban formato, recursos y referencias locales. Esa validación no acredita por sí sola un recorrido con un empleado real ni resultados en datos de producción. [Licencia MIT](LICENSE).
 
-## English
-
-Open video production skills for AI agents: HyperFrames project delivery,
-architecture presentations and media verification. Spanish instructions with
-English discovery metadata; deliver in the user's language. Licensed under
-[MIT](LICENSE), published by [IAbot.io](https://iabot.io).
+Agent Skills for AI employees and agents. Each skill includes an IAbot.io usage example and remains usable in compatible agents outside the platform.
